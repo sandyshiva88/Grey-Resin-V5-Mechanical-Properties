@@ -79,6 +79,7 @@ Edit
 ├── README.md              # Project overview and usage
 ├── requirements.txt       # Python dependencies
 └── LICENSE                # License information (MIT or your choice)
+
 🔬 Future Scope
 Incorporate machine learning models to predict property degradation
 
