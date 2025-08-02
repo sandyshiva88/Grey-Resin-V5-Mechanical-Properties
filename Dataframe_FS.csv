@@ -1,0 +1,10 @@
+﻿Layer Thickness (µm),Curing Temperature (in deg. Celcius),Curing Time (in Minutes),Flexural Strength Before (MPa),Flexural Strength After 72h (MPa),"Weight Gain (24h, %)"
+100,60,15,90,76,1.8
+50,60,15,94,82,1.4
+25,60,15,97,86,1
+100,60,15,91,77,1.9
+50,60,15,95,83,1.5
+25,60,15,98,87,1.1
+100,60,15,89,75,2
+50,60,15,93,81,1.6
+25,60,15,99,88,0.9
