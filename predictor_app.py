@@ -5,10 +5,10 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 # Load CSVs (assumed to be in the same directory)
-df_UTS = pd.read_csv("E:\My Research_Main\IIT Indore Conference\ML Code\Dataframe_UTS.csv")
-df_FS = pd.read_csv("E:\My Research_Main\IIT Indore Conference\ML Code\Dataframe_FS.csv")
-df_IS_Charpy = pd.read_csv("E:\My Research_Main\IIT Indore Conference\ML Code\Dataframe_IS_Charpy.csv")
-df_IS_Izod = pd.read_csv("E:\My Research_Main\IIT Indore Conference\ML Code\Dataframe_IS_Izod.csv")
+df_UTS = pd.read_csv('Dataframe_UTS.csv')
+df_FS = pd.read_csv('Dataframe_FS.csv')
+df_IS_Charpy = pd.read_csv('Dataframe_IS_Charpy.csv')
+df_IS_Izod = pd.read_csv('Dataframe_IS_Izod.csv')
 
 # Prediction function
 def predict_all_models(layer_thickness, curing_temp, curing_time, weight_gain,
