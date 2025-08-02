@@ -1,4 +1,5 @@
 **Mechanical Property Evaluation of Grey Resin V5 Before and After Water Exposure**
+Author: Sandeep Kumar
 This repository presents a detailed experimental study on the mechanical properties of Grey Resin V5, a widely used photopolymer resin in SLA (Stereolithography) 3D printing, before and after 72-hour immersion in deionized water. The study aims to evaluate the degradation effects due to water absorption, simulating humid or submerged environmental conditions.
 
 **📌 Overview**
