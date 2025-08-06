@@ -57,8 +57,9 @@ if st.sidebar.button("Predict Properties After 72h"):
                                      uts_before, fs_before, charpy_before, izod_before)
     st.success("Prediction complete!")
     st.subheader("🔎 Predicted Values After 72h:")
-  
-# Display bar chart of results
-st.bar_chart(pd.DataFrame(results.values(), index=results.keys(), columns=["Predicted Value"]))
     for prop, val in results.items():
         st.write(f"**{prop}**: {val}")
+
+# 📊 Display as bar chart
+st.subheader("📊 Prediction Summary (Bar Chart)")
+st.bar_chart(pd.DataFrame(results.values(), index=results.keys(), columns=["Predicted Value"]))
