@@ -55,11 +55,13 @@ if st.sidebar.button("Predict Properties After 72h"):
     with st.spinner("Predicting..."):
         results = predict_all_models(layer_thickness, curing_temp, curing_time, weight_gain,
                                      uts_before, fs_before, charpy_before, izod_before)
+
     st.success("Prediction complete!")
     st.subheader("🔎 Predicted Values After 72h:")
     for prop, val in results.items():
         st.write(f"**{prop}**: {val}")
 
-    # 📊 Display as bar chart
-st.subheader("📊 Prediction Summary (Bar Chart)")
-st.bar_chart(pd.DataFrame(results.values(), index=results.keys(), columns=["Predicted Value"]))
+    # ✅ ✅ Chart code INSIDE the button block
+    st.subheader("📊 Visual Summary")
+    chart_data = pd.DataFrame(results.values(), index=results.keys(), columns=["Predicted Value"])
+    st.bar_chart(chart_data)
