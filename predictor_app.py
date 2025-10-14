@@ -17,8 +17,8 @@ def predict_all_models(layer_thickness, curing_temp, curing_time, weight_gain,
     targets = {
         "UTS After 72h (MPa)": ("UTS Before (MPa)", df_UTS, uts_before),
         "Flexural Strength After 72h (MPa)": ("Flexural Strength Before (MPa)", df_FS, fs_before),
-        "Impact Strength (Charpy) After 72h (kJ/m2)": ("Impact Strength (Charpy) Before (kJ/m2)", df_IS_Charpy, charpy_before),
-        "Impact Strength (Izod) After 72h (kJ/m2)": ("Impact Strength (Izod) Before (kJ/m2)", df_IS_Izod, izod_before)
+        "Impact Strength (Charpy) After 72h (kJ/m2)": ("Impact Strength (Charpy) Before (J/m2)", df_IS_Charpy, charpy_before),
+        "Impact Strength (Izod) After 72h (kJ/m2)": ("Impact Strength (Izod) Before (J/m2)", df_IS_Izod, izod_before)
     }
 
     results = {}
