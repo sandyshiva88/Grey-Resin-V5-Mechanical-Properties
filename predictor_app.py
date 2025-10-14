@@ -17,8 +17,8 @@ def predict_all_models(layer_thickness, curing_temp, curing_time, weight_gain,
     targets = {
         "UTS After 72h (MPa)": ("UTS Before (MPa)", df_UTS, uts_before),
         "Flexural Strength After 72h (MPa)": ("Flexural Strength Before (MPa)", df_FS, fs_before),
-        "Impact Strength (Charpy) After 72h (J/m2)": ("Impact Strength (Charpy) Before (J/m2)", df_IS_Charpy, charpy_before),
-        "Impact Strength (Izod) After 72h (J/m2)": ("Impact Strength (Izod) Before (J/m2)", df_IS_Izod, izod_before)
+        "Impact Strength (Charpy) After 72h (kJ/m2)": ("Impact Strength (Charpy) Before (kJ/m2)", df_IS_Charpy, charpy_before),
+        "Impact Strength (Izod) After 72h (kJ/m2)": ("Impact Strength (Izod) Before (kJ/m2)", df_IS_Izod, izod_before)
     }
 
     results = {}
@@ -49,8 +49,8 @@ weight_gain = st.sidebar.number_input("Weight Gain (%)", min_value=0.0, max_valu
 st.sidebar.markdown("### Mechanical Properties (Before)")
 uts_before = st.sidebar.number_input("UTS Before (MPa)", value=55)
 fs_before = st.sidebar.number_input("Flexural Strength Before (MPa)", value=89)
-charpy_before = st.sidebar.number_input("Impact Strength (Charpy) Before (J/m²)", value=35)
-izod_before = st.sidebar.number_input("Impact Strength (Izod) Before (J/m²)", value=35)
+charpy_before = st.sidebar.number_input("Impact Strength (Charpy) Before (kJ/m²)", value=35)
+izod_before = st.sidebar.number_input("Impact Strength (Izod) Before (kJ/m²)", value=35)
 
 if st.sidebar.button("Predict Properties After 72h"):
     with st.spinner("Predicting..."):
@@ -67,8 +67,8 @@ if st.sidebar.button("Predict Properties After 72h"):
     comparison_data = {
         "UTS (MPa)": [uts_before, results["UTS After 72h (MPa)"]],
         "Flexural Strength (MPa)": [fs_before, results["Flexural Strength After 72h (MPa)"]],
-        "Charpy Impact (J/m²)": [charpy_before, results["Impact Strength (Charpy) After 72h (J/m2)"]],
-        "Izod Impact (J/m²)": [izod_before, results["Impact Strength (Izod) After 72h (J/m2)"]]
+        "Charpy Impact (kJ/m²)": [charpy_before, results["Impact Strength (Charpy) After 72h (kJ/m2)"]],
+        "Izod Impact (kJ/m²)": [izod_before, results["Impact Strength (Izod) After 72h (kJ/m2)"]]
     }
 
     import plotly.graph_objects as go
