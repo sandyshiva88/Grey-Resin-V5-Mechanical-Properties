@@ -67,8 +67,8 @@ if st.sidebar.button("Predict Properties After 72h"):
     comparison_data = {
         "UTS (MPa)": [uts_before, results["UTS After 72h (MPa)"]],
         "Flexural Strength (MPa)": [fs_before, results["Flexural Strength After 72h (MPa)"]],
-        "Charpy Impact (kJ/m²)": [charpy_before, results["Impact Strength (Charpy) After 72h (kJ/m2)"]],
-        "Izod Impact (kJ/m²)": [izod_before, results["Impact Strength (Izod) After 72h (kJ/m2)"]]
+        "Charpy Impact (kJ/m²)": [charpy_before, results["Impact Strength (Charpy) After 72h (kJ/m²)"]],
+        "Izod Impact (kJ/m²)": [izod_before, results["Impact Strength (Izod) After 72h (kJ/m²)"]]
     }
 
     import plotly.graph_objects as go
