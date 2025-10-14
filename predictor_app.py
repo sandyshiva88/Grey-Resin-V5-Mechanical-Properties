@@ -24,7 +24,7 @@ def predict_all_models(layer_thickness, curing_temp, curing_time, weight_gain,
     results = {}
     for target_name, (before_col, df, before_value) in targets.items():
         features = ['Layer Thickness (µm)', 'Curing Temperature (in deg. Celcius)',
-                    'Curing Time (in Minutes)', 'Weight Gain (24h, %)', before_col]
+                    'Curing Time (in Minutes)', 'Weight Gain (72h, %)', before_col]
         X = df[features]
         y = df[target_name]
 
