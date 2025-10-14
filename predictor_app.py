@@ -38,7 +38,7 @@ def predict_all_models(layer_thickness, curing_temp, curing_time, weight_gain,
     return results
 
 # Streamlit UI
-st.title("SLA 3D Printed Material Property Predictor for Grey Resin V5 Prepared by Sandeep Kumar, IIT Ropar, PhD (Click on '>' symbol on top left corner for entering your input values)")
+st.title("SLA 3D Printed Material Property Predictor for Grey Resin V5 Prepared by Sandeep Kumar, Mechanical Engineering, IIT Ropar, PhD")
 
 st.sidebar.header("Enter Sample Input Values")
 layer_thickness = st.sidebar.slider("Layer Thickness (µm)", 25, 100, 50, step=25)
