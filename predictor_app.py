@@ -57,10 +57,10 @@ weight_gain_charpy = st.sidebar.number_input("Weight Gain (Charpy)", min_value=0
 weight_gain_izod = st.sidebar.number_input("Weight Gain (Izod)", min_value=0.0, max_value=5.0, value=1.5, step=0.1)
 
 st.sidebar.markdown("### Mechanical Properties (Before)")
-uts_before = st.sidebar.number_input("UTS Before (MPa)", value=55)
-fs_before = st.sidebar.number_input("Flexural Strength Before (MPa)", value=89)
-charpy_before = st.sidebar.number_input("Impact Strength (Charpy) Before (kJ/m²)", value=35)
-izod_before = st.sidebar.number_input("Impact Strength (Izod) Before (kJ/m²)", value=35)
+uts_before = st.sidebar.number_input("UTS Before (MPa)", value=37)
+fs_before = st.sidebar.number_input("Flexural Strength Before (MPa)", value=40)
+charpy_before = st.sidebar.number_input("Impact Strength (Charpy) Before (kJ/m²)", value=150)
+izod_before = st.sidebar.number_input("Impact Strength (Izod) Before (kJ/m²)", value=4)
 
 if st.sidebar.button("Predict Properties After 72h"):
     with st.spinner("Predicting..."):
