@@ -50,7 +50,7 @@ curing_temp = st.sidebar.slider("Curing Temperature (°C)", 30, 80, 60)
 curing_time = st.sidebar.slider("Curing Time (minutes)", 5, 30, 15)
 
 # Separate weight gain inputs
-st.sidebar.markdown("### Weight Gain (24h, %)")
+st.sidebar.markdown("### Weight Gain (72h, %)")
 weight_gain_uts = st.sidebar.number_input("Weight Gain (UTS)", min_value=0.0, max_value=5.0, value=1.5, step=0.1)
 weight_gain_fs = st.sidebar.number_input("Weight Gain (Flexural)", min_value=0.0, max_value=5.0, value=1.5, step=0.1)
 weight_gain_charpy = st.sidebar.number_input("Weight Gain (Charpy)", min_value=0.0, max_value=5.0, value=1.5, step=0.1)
