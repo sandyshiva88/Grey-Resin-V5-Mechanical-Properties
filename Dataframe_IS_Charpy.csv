@@ -1,10 +1,10 @@
-﻿Layer Thickness (µm),Curing Temperature (in deg. Celcius),Curing Time (in Minutes),Impact Strength (Charpy) Before (kJ/m2),Impact Strength (Charpy) After 72h (kJ/m2),"Weight Gain (24h, %)"
-100,60,15,35,28,1.8
-50,60,15,38,32,1.4
-25,60,15,41,36,1
-100,60,15,36,29,1.9
-50,60,15,39,33,1.5
-25,60,15,42,37,1.1
-100,60,15,34,27,2
-50,60,15,37,31,1.6
-25,60,15,43,38,0.9
+﻿Layer Thickness (µm),Curing Temperature (in deg. Celcius),Curing Time (in Minutes),Impact Strength (Charpy) Before (kJ/m2),Impact Strength (Charpy) After 72h (kJ/m2),"Weight Gain (72h, %)"
+100,60,15,139.39,134.65,0.89
+50,60,15,161.52,155.38,0.95
+25,60,15,189.92,160.76,0.98
+100,60,15,140.52,135.2,0.88
+50,60,15,162.85,155.95,0.94
+25,60,15,191.15,161.2,0.97
+100,60,15,138.9,133.5,0.89
+50,60,15,160.95,154.9,0.95
+25,60,15,188.85,160,0.97
